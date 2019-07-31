@@ -9,10 +9,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   title = 'ar-angular';
   isTruckVisible = false;
   @ViewChild('usfMarker') markerRef: ElementRef;
-  @ViewChild('truckImage') truck: ElementRef;
 
   ngOnInit() {
-    console.log(this.truck.nativeElement);
     this.markerRef.nativeElement.addEventListener('markerFound', () => {
       console.log('Marker Found!!!');
     });
@@ -22,6 +20,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   onTruckClick() {
-    console.log('Truck Clicked');
+    console.log('Truck Clicked!');
   }
 }
