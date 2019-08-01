@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   onDeskClick() {
     console.log('Desk Image Clicked!');
-    window.location.href = 'http://www.google.com';
+    window.location.href = 'http://localhost:8080/MailApi/TroubleShoot.html';
   }
 
   onAccessoriesClick() {
