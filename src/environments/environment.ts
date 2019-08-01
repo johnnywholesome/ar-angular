@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  envName: 'dev',
+  api: 'https://localhost:3000',
+  apiVersion: 'v1',
+  consumerId: 'AR-ANGULAR',
+  SessionTimeout: {
+    IdleTime: 3600, // Seconds
+    WarningTime: 120, // Seconds
+    RefreshTokenTime: 1200, // Seconds
+  }
 };
 
 /*

@@ -16,6 +16,12 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ar-angular/env/*": ["src/environments/*"],
+      "@ar-angular/common/*": ["src/app/common/*"],
+      "@ar-angular/shared/*": ["src/app/shared/*"],
+      "@ar-angular/assets/*": ["/src/app/assets/*"]
+    }
   }
 }

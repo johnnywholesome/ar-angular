@@ -3,15 +3,15 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, ViewEncapsulat
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'ar-angular';
   isTruckVisible = false;
-  @ViewChild('usfMarker') markerRef: ElementRef;
+  @ViewChild('usfMarker') usfMarker: ElementRef;
 
   ngOnInit() {
-    this.markerRef.nativeElement.addEventListener('markerFound', () => {
+    this.usfMarker.nativeElement.addEventListener('markerFound', () => {
       console.log('Marker Found!!!');
     });
   }
@@ -20,6 +20,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   onTruckClick() {
-    console.log('Truck Clicked!');
+    console.log('Truck Image Clicked!');
   }
 }
