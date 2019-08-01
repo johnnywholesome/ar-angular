@@ -1,20 +1,28 @@
-<app-header></app-header>
 <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false">
   <!-- <a-mixin id="text" text="align: center; width: 10; color: green;
           value: Keeping Kitchens Cooking!!"></a-mixin> -->
   <a-assets>
-    <img id="truck" src="./assets/images/truck.jpg"/>
-    <a-mixin id="text"
-    text="align: center; width: 4; color: green;
-         value: KEEPING KITCHEN'S COOKING!"
-    >
-  </a-mixin>
+    <img id="desk" src="./assets/images/desk.png" width="50" height="50" />
+    <img
+      id="accessories"
+      src="./assets/images/accessories.png"
+      width="50"
+      height="50"
+    />
+    <img id="phone" src="./assets/images/phone.png" width="50" height="50" />
+    <img
+      id="monitor"
+      src="./assets/images/monitor.png"
+      width="50"
+      height="50"
+    />
+    <img id="chair" src="./assets/images/chair.png" width="50" height="50" />
   </a-assets>
 
   <a-marker
     type="pattern"
     preset="custom"
-    url="./assets/images/pattern-us_foods.patt"
+    url="./assets/images/pattern-Cube12marker.patt"
     emitEvents="true"
     cursor="rayOrigin: mouse"
     #usfMarker
@@ -23,15 +31,120 @@
 
     <!-- <a-text position='-1 -0.5 0' rotation="0 0 0" value="Feeding Sweet Dear!"></a-entity-text> -->
     <a-image
-      src="#truck"
-      position="0 0 -1.79"
+      src="#desk"
+      position="0 0.5 -1.79"
       rotation="90 180 0"
-      width="2"
+      width="1"
       height="1"
-      (click)="onTruckClick()"
-      #truckImage
+      (click)="onDeskClick()"
+      #deskImage
     ></a-image>
-    <a-text mixin="text" position="0 0.5 -2.33" rotation="273 180 180" wrap-count="20"></a-text>
+
+    <a-image
+      src="#monitor"
+      position="0 0.5 -3.2"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onMonitorClick()"
+      #monitorImage
+    ></a-image>
+
+    <a-image
+      src="#chair"
+      position="0 0.5 -0.5"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onChairClick()"
+      #chairImage
+    ></a-image>
+
+    <!-- <a-text position='-1 -0.5 0' rotation="0 0 0" value="Feeding Sweet Dear!"></a-entity-text> -->
+    <a-image
+      src="#accessories"
+      position="1.5 0.5 -1.79"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onAccessoriesClick()"
+      #accessoriesImage
+    ></a-image>
+
+    <a-image
+      src="#phone"
+      position="-1.5 0.5 -1.79"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onPhoneClick()"
+      #phoneImage
+    ></a-image>
+    <!-- <a-text mixin="text" position="0 0.5 -2.33" rotation="273 180 180" wrap-count="20"></a-text> -->
+  </a-marker>
+
+  <a-marker
+    type="pattern"
+    preset="custom"
+    url="./assets/images/pattern-ConfRoomFoodFanaticsMarker.patt"
+    emitEvents="true"
+    cursor="rayOrigin: mouse"
+    #usfMarker1
+  >
+    <!-- <a-box position='0 0.5 -1.70' material='color: blue;'></a-box> -->
+
+    <!-- <a-text position='-1 -0.5 0' rotation="0 0 0" value="Feeding Sweet Dear!"></a-entity-text> -->
+    <a-image
+      src="#desk"
+      position="0 0.5 -1.79"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onDeskClick()"
+      #deskImage
+    ></a-image>
+
+    <a-image
+      src="#monitor"
+      position="0 0.5 -3.2"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onMonitorClick()"
+      #monitorImage
+    ></a-image>
+
+    <a-image
+      src="#chair"
+      position="0 0.5 -0.5"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onChairClick()"
+      #chairImage
+    ></a-image>
+
+    <!-- <a-text position='-1 -0.5 0' rotation="0 0 0" value="Feeding Sweet Dear!"></a-entity-text> -->
+    <a-image
+      src="#accessories"
+      position="1.5 0.5 -1.79"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onAccessoriesClick()"
+      #accessoriesImage
+    ></a-image>
+
+    <a-image
+      src="#phone"
+      position="-1.5 0.5 -1.79"
+      rotation="90 180 0"
+      width="1"
+      height="1"
+      (click)="onPhoneClick()"
+      #phoneImage
+    ></a-image>
+    <!-- <a-text mixin="text" position="0 0.5 -2.33" rotation="273 180 180" wrap-count="20"></a-text> -->
   </a-marker>
   <a-entity camera></a-entity>
 </a-scene>
