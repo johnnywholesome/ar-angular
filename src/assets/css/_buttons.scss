@@ -1,0 +1,117 @@
+// Primary Button
+button.green {
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    // padding: 0 20px 0 20px;
+    outline: none;
+    cursor: pointer !important;
+    background-color: $green;
+    color: $white;
+    outline: none;
+    border-radius: 0;
+    border: 2px solid $green;
+    text-transform: uppercase;
+    min-width: 80px;
+    text-align: center;
+}
+
+// Hover Buttons
+.green, .white{
+    &:hover{
+        color: $white;
+        background-color: $greenHover;
+        border: 2px solid $greenHover;
+    }
+}
+
+// Secondary Button
+button.white {
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    padding: 0 20px 0 20px;
+    outline: none;
+    cursor: pointer !important;
+    background-color: $white;
+    color: $black;
+    border: 2px solid $green;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 80px;
+}
+
+// Modal Button
+button.gray {
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer !important;
+    background-color: $white;
+    color: $black;
+    border: 2px solid $grey;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 80px;
+}
+
+
+// Primary Disabled Button
+button.disabledButton{
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    outline: none;
+    cursor: default !important;
+    background-color: $lightGrey;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 80px;
+    border: 2px solid $lightGrey;
+    color: $grey;
+    cursor: not-allowed !important;
+}
+
+button.disabledButton:hover{
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    outline: none;
+    cursor: default !important;
+    background-color: $lightGrey;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 80px;
+    border: 2px solid $lightGrey;
+    color: $grey;
+    cursor: not-allowed !important;
+}
+
+// Secondary Disabled Button
+button.disabledButton2{
+    font-family: OswaldMedium !important;
+    font-size: 16px !important;
+    height: 44px;
+    vertical-align: middle !important;
+    border-radius: 0;
+    outline: none;
+    cursor: default !important;
+    background-color: $white;
+    border-radius: 0;
+    text-transform: uppercase;
+    min-width: 80px;
+    border: 2px solid $grey;
+    color: $grey;
+    cursor: not-allowed !important;
+}

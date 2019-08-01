@@ -1,0 +1,76 @@
+// Colors
+// Primary
+$black: #2F2F2F;
+$gold: #C08B0B;
+$green: #56821F;
+$orange: #CF4520;
+$white: #ffffff;
+
+//Grey Tones
+$darkGrey: #4F4F4F;
+$grey: #B2B2B2;
+$lightGrey: #D7D7D7;
+$lightestGrey: #F2F2F2;
+$whiteGrey : #f3f1f0;
+
+// Secondary
+$goldSecondary: #996D05;
+$greenSecondary: #3A5E0B;
+$orangeSecondary: #9F2200;
+
+// Colors for table rows based on header color (confused? check out the style guide)
+$rowBlackHeader: #F2F2F2;
+$rowGoldHeader: #F5EEE1;
+$rowGreenHeader: #E9ECE2;
+$rowOrangeHeader: #F7E9E1;
+$standardRowColor: #F2F2F2;
+
+// Accent colors - primary
+$blueAccent: #0089B6;
+$redAccent: #C65959;
+
+// Accent colors - secondary
+$blueAccentSecondary: #DFEDF6;
+$redAccentSecondary: #F4D9D8;
+
+// Hover
+$goldHover: #F3BA16;
+$greenHover: #7AA33D;
+// missing Orange Hover
+
+// Accent colors - for table rows
+$rowBlueAccent: #ECF2F7;
+$rowRedAccent: #F4E7E3;
+
+// Fonts
+$RobotoBold: RobotoBold;
+$oswald: OswaldRegular;
+$oswaldMedium: OswaldMedium;
+$oswaldBold: OswaldBold;
+
+// Font Sizes
+// Standard elements
+$defaultFontSize: 14px;
+$labelSize: 12px;
+$h1Size: 44px;
+$h2Size: 36px;
+$h3Size: 24px;
+$h4Size: 16px;
+$h5Size: 16px;
+$h6Size: 16px;
+$tableHeaderSize: 13px;
+$tableRowSize: 12px;
+
+// Buttons
+$standardButtonFontSize: 16px;
+$mediumButtonFontSize: 16px;
+$smallButtonFontSize: 16px;
+
+// Line Heights
+$defaultLineHeight: 16px;
+$labelLineHeight: 14px;
+$pLineHeight: 16px;
+
+// Transitions
+$transitionDuration: .25s;
+$transitionType: ease-in-out;

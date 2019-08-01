@@ -1,0 +1,40 @@
+@import "./_variables";
+@import "./_buttons";
+
+/* Placeholder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b3b3b3;
+    font-size: 13px;
+}
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #b3b3b3;
+    font-size: 13px;
+}
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #b3b3b3;
+    font-size: 13px;
+}
+  :-moz-placeholder { /* Firefox 18- */
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+input:hover,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active{
+  outline: 0 !important;
+  -webkit-appearance:none;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px white inset;
+	box-shadow: 0 0 0 30px white inset;
+}
+  
